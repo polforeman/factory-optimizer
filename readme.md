@@ -7,9 +7,6 @@ Factory Optimizer is a project designed to optimize the arrangement of factory b
 - [Installation](#installation)
 - [Usage](#usage)
 - [Features](#features)
-- [Dependencies](#dependencies)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 
@@ -38,6 +35,7 @@ Factory Optimizer is a project designed to optimize the arrangement of factory b
 
 ```bash
 python factory_optimizer.py
+```
 
 ## Features
 
@@ -45,4 +43,3 @@ python factory_optimizer.py
 - **NSGA-II Algorithm**: Utilizes the Non-dominated Sorting Genetic Algorithm II (NSGA-II) for multi-objective optimization.
 - **Visualization**: Generates plots to visualize the optimized arrangements.
 - **Configurable**: Easily configurable through a JSON configuration file.
-```
