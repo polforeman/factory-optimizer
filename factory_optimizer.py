@@ -19,7 +19,7 @@ def main():
     algorithm = NSGA2(pop_size=200)
 
     # Run the optimization
-    res = minimize(problem, algorithm, ('n_gen', 200), verbose=False, callback=progress_callback, save_history=True)
+    res = minimize(problem, algorithm, ('n_gen', 500), verbose=False, callback=progress_callback, save_history=True)
 
     # Convert the results to a JSON-serializable format
     results_json = {
