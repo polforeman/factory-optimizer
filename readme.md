@@ -9,6 +9,7 @@ Factory Optimizer is a project designed to optimize the arrangement of factory b
 - [Installation](#installation)
 - [Usage](#usage)
 - [Features](#features)
+- [Geometry](#geometry)
 - [Results](#results)
 
 ## Installation
@@ -46,6 +47,15 @@ python factory_optimizer.py
 - **NSGA-II Algorithm**: Utilizes the Non-dominated Sorting Genetic Algorithm II (NSGA-II) for multi-objective optimization.
 - **Visualization**: Generates plots to visualize the optimized arrangements.
 - **Configurable**: Easily configurable through a JSON configuration file.
+
+## Geometry
+
+- Avoid shapely intersects(), instead:
+  - First check if distance from point to point is larger than both rectangle diagonals added -> assured non-intersection
+  - If smaller, use AABB calculation for intersection
+- Avoid creating path lines and then measuring them, instead:
+  - Use shapely distance() for optimisation
+  - Create lines only after optimization with shapely shortest_line()
 
 ## Results
 
