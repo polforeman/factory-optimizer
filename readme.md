@@ -17,7 +17,7 @@ Factory Optimizer is a project designed to optimize the arrangement of factory b
 
    ```bash
    git clone https://github.com/polforeman/factory-optimizer
-   cd factory_optimizer
+   cd factory-optimizer
 
    ```
 
